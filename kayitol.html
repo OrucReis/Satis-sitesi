@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayit Ol</title>
+</head>
+<body>
+  <nav>
+    <div class="nav">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo2.png" alt="Logo" width="200px" height="120px"></a>
+        </div>
+      <div class="nav-item">
+          <input type="checkbox"  id="kontrol">
+          <label for="kontrol" class="kontrol">
+              <img src="img/menu.png" alt="menu" width="40px" height="40px">
+          </label>
+          <ul>
+              <li><a href="index.html">Anasayfa</a></li>
+              <li><a href="hakkimizda.html">Hakkımızda</a></li>
+              <li><a href="urunler.html">Ürünler</a></li>
+              <li><a href="iletisim.html">İletişim</a></li>
+              <li><a href="giris.html">Giris Yap</a></li>
+              <li><a href="kayitol.html">Kayıt Ol</a></li>
+              <li><a href="sepet.html">Sepet</a></li>
+          </ul>
+      </div>
+    </div>
+  </nav>     
+  <section>
+    <div class="kayitol-form">
+        <form action="kayitol.hmtl" method="get" class="kayitol">
+          <h1>Kayit Ol</h1>
+          <label for="ad">Adınız :</label>
+          <input type="text" name="ad" id="ad" required>
+
+          <label for="soyad">Soyadınız :</label>
+          <input type="text" name="soyad" id="soyad"required>
+
+          <label for="tel">Telefon no :</label>
+          <input type="tel" name="tel" id="tel"required>
+
+          <label for="email">E-Mail adresiniz :</label>
+          <input type="email" name="email" id="email"required>
+
+          <label for="sifre">Şifreniz:</label>
+          <input type="password" name="sif" id="sif"required>
+
+          <button type="submit">Kayit Ol</button>
+
+        </form>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>İletişim Bilgileri</h3>
+        <p>Adres: 1234 Cadde, Ankara, Türkiye</p>
+        <p>Telefon: +90 (555) 555 55 55</p>
+        <p>E-posta: info@emrebellikli.com.tr</p>
+      </div>
+      <div class="footer-links">
+        <h3>Hızlı Bağlantılar</h3>
+        <ul>
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="urunler.html">Ürünler</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+          <li>
+            <p id="saatTarih"></p>
+
+            <script>
+                function updateClock() {
+                var now = new Date();
+                var gunler = ["Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"];
+                var gun = gunler[now.getDay()];
+                var saat = now.getHours();
+                var dakika = now.getMinutes();
+                var saniye = now.getSeconds();
+                var tarih = now.getDate() + "/" + (now.getMonth() + 1) + "/" + now.getFullYear();
+
+                // Saat ve tarihi HTML elementine ekle
+                document.getElementById('saatTarih').innerHTML = gun + ' ' + tarih + ' ' + saat + ':' + (dakika < 10 ? '0' : '') + dakika + ':' + (saniye < 10 ? '0' : '') + saniye;
+
+                // 1 saniye sonra fonksiyonu tekrar çağır
+                setTimeout(updateClock, 1000);
+                }
+
+                // Sayfa yüklendiğinde saat ve tarihi güncelle
+                window.onload = function () {
+                updateClock();
+                };
+            </script>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Emre Belliki. Tüm hakları saklıdır.</p>
+    </div>
+</footer>
+</body>
+</html>

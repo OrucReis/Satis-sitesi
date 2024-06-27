@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/urun_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTX 4090 GAMING X TRIO 24GB</title>
+</head>
+<body>
+
+    <nav>
+        <div class="nav">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo2.png" alt="Logo" width="200px" height="120px"></a>
+            </div>
+          <div class="nav-item">
+              <input type="checkbox"  id="kontrol">
+              <label for="kontrol" class="kontrol">
+                  <img src="img/menu.png" alt="menu" width="40px" height="40px">
+              </label>
+              <ul>
+                  <li><a href="index.html">Anasayfa</a></li>
+                  <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                  <li><a href="urunler.html">Ürünler</a></li>
+                  <li><a href="iletisim.html">İletişim</a></li>
+                  <li><a href="giris.html">Giris Yap</a></li>
+                  <li><a href="kayitol.html">Kayıt Ol</a></li>
+                  <li><a href="sepet.html">Sepet</a></li>
+              </ul>
+          </div>
+        </div>
+      </nav>     
+
+    <div class="shop_card">
+        <div class="resim_section">
+            <div class="small_resim">
+                <img src="img/urunler/urun1/urun1_1.jpg" alt="">
+                <img src="img/urunler/urun1/urun1_2.jpg" alt="">
+                <img src="img/urunler/urun1/urun1_3.jpg" alt="">
+                <img src="img/urunler/urun1/urun1_4.jpg" alt="">
+                <img src="img/urunler/urun1/urun1_5.jpg" alt="">
+            </div>
+            <div class="big_resim">
+                <img src="img/urunler/urun1/urun1_1.jpg" alt="">
+            </div>
+        </div>
+        <div class="desciription_section">
+            <div class="product_name">
+                <div class="product_header">
+                    <h2>RTX 4090 GAMING X TRIO 24GB</h2><!--İsim-->
+                    <div class="cargo_info">Bedava kargo</div>
+                </div>
+                <div class="product_rate_price">
+                    <p>
+                        <img src="img/dolu_yildiz.png" alt="">
+                        <img src="img/dolu_yildiz.png" alt="">
+                        <img src="img/dolu_yildiz.png" alt="">
+                        <img src="img/dolu_yildiz.png" alt="">
+                        <img src="img/dolu_yildiz.png" alt="">
+                        <a href="#"><span>10 Değerlendirme</span></a><!--değerlendirme-->
+                    </p>
+                    <div class="price">
+                        <p>80.000 TL</p><!--Para-->
+                        <div class="discaunt">
+                            <p>Sepette %10 indirim</p>
+                            <p class="discaunt_price">75.000 TL</p><!--İnidirmli para-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sizes">
+                <div class="size">
+                    
+                
+                <div class="addtobasket">
+                    <div class="addbutton">
+                        <button onclick="addToCart(this)">Sepete Ekle</button>
+                        <div class="favori"><img src="img/kalp.png" alt=""></div>
+                    </div>
+                    <div class="deliverydate">
+                        <p>Tahmini Teslimat Tarihi 10-15 Ocak 2023</p>
+                        <p>2343 Kişinin Favorisi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product_info">
+                <h3>Ürün Bilgileri</h3>
+                <ul>
+                    <li>Ekran Kartı Chipset Marka:NVIDIA</li>
+                    <li>Çekirdek Hızı Maks.:2610 MHz</li>
+                    <li>Bellek Tipi:GDDR6X</li>
+                    <li>Bellek Hızı:21000 MHz</li>
+                    <li>Grafik İşlemci:GeForce RTX 4090</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script>
+        function addToCart(button) {
+    alert("Ürün sepete eklendi!");
+}
+    </script>
+    <footer>
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>İletişim Bilgileri</h3>
+            <p>Adres: 1234 Cadde, Ankara, Türkiye</p>
+            <p>Telefon: +90 (555) 555 55 55</p>
+            <p>E-posta: info@emrebellikli.com.tr</p>
+          </div>
+          <div class="footer-links">
+            <h3>Hızlı Bağlantılar</h3>
+            <ul>
+              <li><a href="index.html">Anasayfa</a></li>
+              <li><a href="hakkimizda.html">Hakkımızda</a></li>
+              <li><a href="urunler.html">Ürünler</a></li>
+              <li><a href="iletisim.html">İletişim</a></li>
+              <li>
+                <p id="saatTarih"></p>
+    
+                <script>
+                    function updateClock() {
+                    var now = new Date();
+                    var gunler = ["Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"];
+                    var gun = gunler[now.getDay()];
+                    var saat = now.getHours();
+                    var dakika = now.getMinutes();
+                    var saniye = now.getSeconds();
+                    var tarih = now.getDate() + "/" + (now.getMonth() + 1) + "/" + now.getFullYear();
+    
+                    // Saat ve tarihi HTML elementine ekle
+                    document.getElementById('saatTarih').innerHTML = gun + ' ' + tarih + ' ' + saat + ':' + (dakika < 10 ? '0' : '') + dakika + ':' + (saniye < 10 ? '0' : '') + saniye;
+    
+                    // 1 saniye sonra fonksiyonu tekrar çağır
+                    setTimeout(updateClock, 1000);
+                    }
+    
+                    // Sayfa yüklendiğinde saat ve tarihi güncelle
+                    window.onload = function () {
+                    updateClock();
+                    };
+                </script>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Emre Belliki. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script>
+        const small_resim=document.querySelectorAll(".small_resim img")
+        const big_resim=document.querySelector(".big_resim img")
+        small_resim.forEach(item=>{
+            item.addEventListener("mouseover",()=>{
+                big_resim.src=item.src;
+            })
+        })
+    </script>
+</body>
+</html>

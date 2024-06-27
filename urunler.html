@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/urunler_style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ürünler</title>
+</head>
+<body>
+  <nav>
+    <div class="nav">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo2.png" alt="Logo" width="200px" height="120px"></a>
+        </div>
+      <div class="nav-item">
+          <input type="checkbox"  id="kontrol">
+          <label for="kontrol" class="kontrol">
+              <img src="img/menu.png" alt="menu" width="40px" height="40px">
+          </label>
+          <ul>
+              <li><a href="index.html">Anasayfa</a></li>
+              <li><a href="hakkimizda.html">Hakkımızda</a></li>
+              <li><a href="urunler.html">Ürünler</a></li>
+              <li><a href="iletisim.html">İletişim</a></li>
+              <li><a href="giris.html">Giris Yap</a></li>
+              <li><a href="kayitol.html">Kayıt Ol</a></li>
+              <li><a href="sepet.html">Sepet</a></li>
+          </ul>
+      </div>
+    </div>
+  </nav>     
+
+  <!---->
+ 
+  <div id="product-options">
+    <button onclick="scrollToProduct('urun1')">Ekran Kartları</button>
+    <button onclick="scrollToProduct('urun2')">İşlemciler</button>
+    <button onclick="scrollToProduct('urun3')">Ramler</button>
+    <button onclick="scrollToProduct('urun4')">Anakart</button>
+    <button onclick="scrollToProduct('urun5')">Power Supply</button>
+  </div>
+  
+
+    <div id="urun1" class="yazi">
+      <h1>Ekran Kartları</h1>
+      <hr>
+    </div>
+  <section class="product-section" >
+    <div class="product-card">
+      <div class="shop_yildiz">
+        <p>
+          <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+          <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+          <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+          <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+          <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        </p>
+      </div>
+      <a href="urun1.html"><img class="urun" src="img/urunler/urun1/urun1_1.jpg" alt="Ürün 1"></a>
+      <h3>Nvidia RTX 4090</h3>
+      <p class="price">80.000 &#8378;</p>
+      <p class="description">MSI GeForce RTX 4090 GAMING X TRIO 24GB GDDR6X 384Bit DLSS 3 Ekran Kartı</p>
+      <button onclick="addToCart(this)">Satın Al</button>
+    </div>
+
+    <div class="product-card">
+      <div class="shop_yildiz">
+        <p>
+          <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+          <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+          <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+          <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+          <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        </p>
+      </div>
+      <a href="urun2.html"><img class="urun" src="img/urunler/urun2/urun2_1.jpg" alt="Ürün 1"></a>
+      <h3>MSI Radeon RX 6800 GAMING Z TRIO 16GB</h3>
+      <p class="price">22.000 &#8378;</p>
+      <p class="description">MSI Radeon RX 6800 GAMING Z TRIO 16GB GDDR6 256 Bit Ekran Kartı</p>
+      <button onclick="addToCart(this)">Satın Al</button>
+    </div>
+
+    <div class="product-card">
+      <div class="shop_yildiz">
+        <p>
+          <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+          <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+          <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+          <img class="yildiz" src="img/bos_yildiz.png" alt="">
+          <img class="yildiz" src="img/bos_yildiz.png" alt="">
+        </p>
+      </div>
+      <a href="urun3.html"><img class="urun" src="img/urunler/urun3/urun3_1.jpg" alt="Ürün 1"></a>
+      <h3>ZOTAC GeForce RTX 4060 Ti TWIN EDGE 8GB </h3>
+      <p class="price">20.000 &#8378;</p>
+      <p class="description">ZOTAC GeForce RTX 4060 Ti TWIN EDGE 8GB GDDR6 128Bit Nvidia DLSS 3 Ekran Kartı</p>
+      <button onclick="addToCart(this)">Satın Al</button>
+    </div>
+
+    <div class="product-card">
+      <div class="shop_yildiz">
+        <p>
+          <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+          <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+          <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+          <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+          <img class="yildiz" src="img/bos_yildiz.png" alt="">
+        </p>
+      </div>
+      <a href="urun4.html"><img class="urun" src="img/urunler/urun4/urun4_1.jpg" alt="Ürün 1"></a>
+      <h3>MSI GEFORCE GTX 1650</h3>
+      <p class="price">8.000 &#8378;</p>
+      <p class="description">MSI GEFORCE GTX 1650 D6 VENTUS XS OCV1 4GB GDDR6 128bit NVIDIA Ekran Kartı</p>
+      <button onclick="addToCart(this)">Satın Al</button>
+    </div>
+  </section>
+
+  <div id="urun2" class="yazi">
+    <h1>İşlemciler</h1>
+    <hr>
+  </div>
+<section class="product-section" >
+  <div class="product-card">
+    <div class="shop_yildiz">
+      <p>
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+      </p>
+    </div>
+    <a href="urun5.html"><img class="urun" src="img/urunler/urun5/urun5_1.jpg" alt="Ürün 1"></a>
+    <h3>AMD Ryzen™9 7950X</h3>
+    <p class="price">25.000 &#8378;</p>
+    <p class="description">AMD Ryzen™9 7950X Soket AM5 4.5GHz 64MB 170W 5nm İşlemci</p>
+    <button onclick="addToCart(this)">Satın Al</button>
+  </div>
+
+  <div class="product-card">
+    <div class="shop_yildiz">
+      <p>
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+      </p>
+    </div>
+    <a href="urun6.html"><img class="urun" src="img/urunler/urun6/urun6_1.jpg" alt="Ürün 1"></a>
+    <h3>Intel Core i9 14900K</h3>
+    <p class="price">26.000 &#8378;</p>
+    <p class="description">Intel Core i9 14900K Soket 1700 14.Nesil 5.80GHz 32MB Önbellek 10nm İşlemci</p>
+    <button onclick="addToCart(this)">Satın Al</button>
+  </div>  
+
+  <div class="product-card">
+    <div class="shop_yildiz">
+      <p>
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/bos_yildiz.png" alt="">
+        <img class="yildiz" src="img/bos_yildiz.png" alt="">
+        <img class="yildiz" src="img/bos_yildiz.png" alt="">
+      </p>
+    </div>
+    <a href="urun7.html"><img class="urun" src="img/urunler/urun7/urun7_1.jpg" alt="Ürün 1"></a>
+    <h3>AMD Ryzen™3 3200G</h3>
+    <p class="price">4.000 &#8378;</p>
+    <p class="description">AMD Ryzen™3 3200G Soket AM4 + Wraith Stealth 3.6GHz - 4GHz 6MB 65W 12nm İşlemci</p>
+    <button onclick="addToCart(this)">Satın Al</button>
+  </div>  
+
+  <div class="product-card">
+    <div class="shop_yildiz">
+      <p>
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/bos_yildiz.png" alt="">
+      </p>
+    </div>
+    <a href="urun8.html"><img class="urun" src="img/urunler/urun8/urun8_1.jpg" alt="Ürün 1"></a>
+    <h3>AMD Ryzen™5 5600X </h3>
+    <p class="price">7.000 &#8378;</p>
+    <p class="description">AMD Ryzen™5 5600X Soket AM4 + Wraith Stealth 3.7GHz 32MB 65W 7nm İşlemci</p>
+    <button onclick="addToCart(this)">Satın Al</button>
+  </div> 
+
+  <div class="product-card">
+    <div class="shop_yildiz">
+      <p>
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/bos_yildiz.png" alt="">
+        <img class="yildiz" src="img/bos_yildiz.png" alt="">
+      </p>
+    </div>
+    <a href="urun9.html"><img class="urun" src="img/urunler/urun9/urun9_1.jpg" alt="Ürün 1"></a>
+    <h3>Intel Core i7 12700K</h3>
+    <p class="price">12.000 &#8378;</p>
+    <p class="description">Intel Core i7 12700K Soket 1700 12. Nesil 2.70GHz 25MB Önbellek 10nm İşlemci</p>
+    <button onclick="addToCart(this)">Satın Al</button>
+  </div>  
+</section>
+
+
+
+<div id="urun3" class="yazi">
+  <h1>Ramler</h1>
+  <hr>
+</div>
+<section class="product-section" >
+  <div class="product-card">
+    <div class="shop_yildiz">
+      <p>
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+      </p>
+    </div>
+    <a href="urun10.html"><img class="urun" src="img/urunler/urun10/urun10_1.jpg" alt="Ürün 1"></a>
+    <h3>GSKILL 256GB (8x32GB)</h3>
+    <p class="price">35.000 &#8378;</p>
+    <p class="description">GSKILL 256GB (8x32GB) RipjawsV Siyah DDR4 3600MHz CL16 1.35V 2xQuad Kit PC Ram</p>
+    <button onclick="addToCart(this)">Satın Al</button>
+  </div>
+
+  <div class="product-card">
+    <div class="shop_yildiz">
+      <p>
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/bos_yildiz.png" alt="">
+        <img class="yildiz" src="img/bos_yildiz.png" alt="">
+        <img class="yildiz" src="img/bos_yildiz.png" alt="">
+        <img class="yildiz" src="img/bos_yildiz.png" alt="">
+      </p>
+    </div>
+    <a href="urun11.html"><img class="urun" src="img/urunler/urun11/urun11_1.jpg" alt="Ürün 1"></a>
+    <h3>XPG 8GB (1x8GB) Spectrix</h3>
+    <p class="price">1.000 &#8378;</p>
+    <p class="description">XPG 8GB (1x8GB) Spectrix D35G RGB DDR4 3200MHz CL16 1.35V PC Ram</p>
+    <button onclick="addToCart(this)">Satın Al</button>
+  </div>
+
+  <div class="product-card">
+    <div class="shop_yildiz">
+      <p>
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/bos_yildiz.png" alt="">
+        <img class="yildiz" src="img/bos_yildiz.png" alt="">
+      </p>
+    </div>
+    <a href="urun12.html"><img class="urun" src="img/urunler/urun12/urun12_1.jpg" alt="Ürün 1"></a>
+    <h3>GSKILL 64GB (2x32GB) TRIDENT</h3>
+    <p class="price">12.000 &#8378;</p>
+    <p class="description">GSKILL 64GB (2x32GB) TRIDENT Z5 SİYAH DDR5 6800MHz CL34 1.40V RGB PC Ram</p>
+    <button onclick="addToCart(this)">Satın Al</button>
+  </div>
+</section>
+
+<div id="urun4" class="yazi">
+  <h1>Anakart</h1>
+  <hr>
+</div>
+<section class="product-section" >
+  <div class="product-card">
+    <div class="shop_yildiz">
+      <p>
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/bos_yildiz.png" alt="">
+      </p>
+    </div>
+    <a href="urun13.html"><img class="urun" src="img/urunler/urun13/urun13_1.jpg" alt="Ürün 1"></a>
+    <h3>MSI MEG X670E GODLIKE AMD X670</h3>
+    <p class="price">68.000 &#8378;</p>
+    <p class="description">MSI MEG X670E GODLIKE AMD X670 Soket AM5 DDR5 6600MHz(OC) M.2 Anakart</p>
+    <button onclick="addToCart(this)">Satın Al</button>
+  </div>
+
+  <div class="product-card">
+    <div class="shop_yildiz">
+      <p>
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/bos_yildiz.png" alt="">
+        <img class="yildiz" src="img/bos_yildiz.png" alt="">
+      </p>
+    </div>
+    <a href="urun14.html"><img class="urun" src="img/urunler/urun14/urun14_1.jpg" alt="Ürün 1"></a>
+    <h3>MSI MAG B550 TOMAHAWK Amd B550</h3>
+    <p class="price">9.000 &#8378;</p>
+    <p class="description">MSI MAG B550 TOMAHAWK Amd B550 Soket AM4 DDR4 5100(OC) M.2 Anakart</p>
+    <button onclick="addToCart(this)">Satın Al</button>
+  </div>
+</section>
+
+<div id="urun5" class="yazi">
+  <h1>Power Supply</h1>
+  <hr>
+</div>
+<section class="product-section" >
+  <div class="product-card">
+    <div class="shop_yildiz">
+      <p>
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/dolu_yildiz.png" alt="">
+        <img class="yildiz" src="img/bos_yildiz.png" alt="">
+        <img class="yildiz" src="img/bos_yildiz.png" alt="">
+      </p>
+    </div>
+    <a href="urun15.html"><img class="urun" src="img/urunler/urun15/urun15_1.jpg" alt="Ürün 1"></a>
+    <h3>ASUS ROG THOR 1600W 80 PLUS </h3>
+    <p class="price">30.000 &#8378;</p>
+    <p class="description">ASUS ROG THOR 1600W 80 PLUS TITANIUM AURO SYNC & OLED EKRANLI GÜÇ KAYNAĞI</p>
+    <button onclick="addToCart(this)">Satın Al</button>
+  </div>
+</section>
+
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-info">
+      <h3>İletişim Bilgileri</h3>
+      <p>Adres: 1234 Cadde, Ankara, Türkiye</p>
+      <p>Telefon: +90 (555) 555 55 55</p>
+      <p>E-posta: info@emrebellikli.com.tr</p>
+    </div>
+    <div class="footer-links">
+      <h3>Hızlı Bağlantılar</h3>
+      <ul>
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="urunler.html">Ürünler</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li>
+          <p id="saatTarih"></p>
+
+          <script>
+              function updateClock() {
+              var now = new Date();
+              var gunler = ["Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"];
+              var gun = gunler[now.getDay()];
+              var saat = now.getHours();
+              var dakika = now.getMinutes();
+              var saniye = now.getSeconds();
+              var tarih = now.getDate() + "/" + (now.getMonth() + 1) + "/" + now.getFullYear();
+
+              // Saat ve tarihi HTML elementine ekle
+              document.getElementById('saatTarih').innerHTML = gun + ' ' + tarih + ' ' + saat + ':' + (dakika < 10 ? '0' : '') + dakika + ':' + (saniye < 10 ? '0' : '') + saniye;
+
+              // 1 saniye sonra fonksiyonu tekrar çağır
+              setTimeout(updateClock, 1000);
+              }
+
+              // Sayfa yüklendiğinde saat ve tarihi güncelle
+              window.onload = function () {
+              updateClock();
+              };
+          </script>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2023 Emre Belliki. Tüm hakları saklıdır.</p>
+  </div>
+</footer>
+<script>
+  function addToCart(button) {
+  // Sepete ekleme işlemleri burada gerçekleştirilebilir
+  alert("Ürün sepete eklendi!");
+}
+</script>
+  <script>
+    function scrollToProduct(product) {
+      var element = document.getElementById(product);
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>

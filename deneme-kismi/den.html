@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+
+    <style>
+      .kontrol{
+        padding-right: 10px;
+        float: right;
+        display: block;
+      }
+      #kontrol{
+        display: block;
+      }
+      @media(max-width:800px){
+        .kontrol{
+          display: block;
+
+        }
+        .navbar{
+          float: left;
+          margin: 0px;
+          padding: 0px;
+          width: 100%;
+        }
+        .navbar ul{
+          position: absolute;
+          margin-top: 100px;
+          margin-left: 0px;
+          width: 100%;
+
+        }
+        .navbar ul li{
+          display: block;
+          margin: 0px;
+          padding: 0px;
+          width: 100%;
+        }
+        .navbar a{
+          width: 100%;
+          font-size: 30px;
+          line-height: 100px;
+        }
+        .navbar button{
+          margin-top: 100px;
+          margin-left: 0px;
+          display: block;
+          margin: 0px;
+          padding: 0px;
+          width: 100%;
+        }
+        #kontrol:checked~li{
+          display: block;
+        }
+      }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navdiv">
+                <div><a href="#"><img src="img/logo2.png" alt="Logo" width="200px" height="120px"></a></div>
+                <div class="navlogo"> 
+                  <div>
+                    <input type="checkbox" id="kontrol">
+                  <label for="kontrol" class="kontrol">
+                    <img src="img/menu.png" alt="menu" width="40px" height="40px">
+                  </label>
+                  </div>
+                  
+                    <ul>
+                        <li><a href="#" class="nav-a">Anasayfa</a></li>
+                        <li><a href="#" class="nav-a">Ürünler</a></li>
+                        <li><a href="#" class="nav-a">Hakkımızda</a></li>
+                        <li><a href="iletisim.html" class="nav-a">İletişim</a></li>
+                        <button><a href="#">Giris Yap</a></button>
+                        <button><a href="#">Kayıt Ol</a></button>
+                        <button><a href="#">Sepet</a></button>
+                    </ul>
+                </div>
+            </div>
+        </nav>  
+    </header>
+    <section class="product-section">
+        <div class="product-card">
+          <img src="img/urun.png" alt="Ürün 1">
+          <h3>Ürün 1</h3>
+          <p class="price">19.99 &#8378;</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button><a href="#">Satın Al</a></button>
+        </div>
+    
+        <div class="product-card">
+          <img src="img/urun.png" alt="Ürün 2">
+          <h3>Ürün 2</h3>
+          <p class="price">24.99 &#8378;</p>
+          <p class="description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+          <button><a href="#">Satın Al</a></button>
+        </div>
+    
+        <div class="product-card">
+          <img src="img/urun.png" alt="Ürün 3">
+          <h3>Ürün 3</h3>
+          <p class="price">29.99 &#8378;</p>
+          <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <button><a href="#">Satın Al</a></button>
+        </div>
+        
+
+        <div class="product-card">
+            <img src="img/urun.png" alt="Ürün 1">
+            <h3>Ürün 1</h3>
+            <p class="price">19.99 &#8378;</p>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button><a href="#">Satın Al</a></button>
+          </div>
+      
+          <div class="product-card">
+            <img src="img/urun.png" alt="Ürün 2">
+            <h3>Ürün 2</h3>
+            <p class="price">24.99 &#8378;</p>
+            <p class="description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+            <button><a href="#">Satın Al</a></button>
+          </div>
+      
+          <div class="product-card">
+            <img src="img/urun.png" alt="Ürün 3">
+            <h3>Ürün 3</h3>
+            <p class="price">29.99 &#8378;</p>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <button><a href="#">Satın Al</a></button>
+          </div>
+        <!-- Diğer kartlar buraya eklenebilir -->
+      </section>
+    <footer>
+            <p>&copy; 2023 Emre Bellikli. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,253 @@
+.shop_card{
+    padding: 5px;
+    display: flex;
+    justify-content: center; /* Center the shop_card */
+    width: 70%; /* Adjust the width as needed */
+    margin: 0 auto;
+
+}
+.resim_section{
+    display: flex;
+    min-height: 300px; 
+}
+.small_resim img{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    object-fit: contain;
+    cursor: pointer;
+}
+.small_resim img:hover{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.big_resim img{
+    height: 500px;
+    padding: 10px;
+}
+.desciription_section{
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product_header h2{
+    font-size: 1.2rem;
+}
+.cargo_info{
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    width: 70px;
+    text-align: center; 
+}
+.product_rate_price{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.product_rate_price p img{
+    height: 20px;
+    margin-left: 3px;
+    align-items: center;
+}
+.price{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.price p{
+    margin-right: 5px;
+}
+.discaunt p{
+    margin-left: 5px;
+}
+.discaunt::before{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: black;
+
+}
+.discaunt_price{
+    font-weight: bold;
+    font-size: 1rem;
+}
+.satici p span{
+    background: black;
+    color: white;
+    border-radius: 2px;
+    padding: 0.1rem 0.3rem;
+    font-size: 0.8rem;
+
+}
+a{
+    color: black;
+    font-size: 0.8rem;
+}
+.product_name, .satici,.product_info,.sizes {
+    padding: 0.3rem;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 2px;            
+}
+.favori{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-left: 10px;
+    padding: 0.4rem;
+    border-radius: 5px;
+}
+.satici{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.addbutton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.addbutton button{
+    flex: 1;
+    padding: 1rem 5rem;
+    background: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: background 0.2s ease-in-out;
+
+}
+.addbutton button:hover{
+    background-color: gray;
+}
+.favori img{
+    height: 30px;
+    cursor: pointer;
+    object-fit: cover;
+    object-position: center;
+
+}
+.deliverydate{
+    margin-top: 5px;
+    display: flex;
+    font-size: 0.6rem;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem;
+}
+.product_info{
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+ul{
+    margin-left: 20px;
+}
+.boldersize{
+    border: 1px solid black;
+}
+@media only screen and (max-width: 768px) {
+    .shop_card {
+        display: block;
+        min-height: auto;
+        min-width: auto;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .resim_section {
+        flex-direction: column-reverse; 
+    }
+
+    .small_resim {
+        flex-direction: row;
+        overflow-x: auto;
+        margin-top: 10px;
+    }
+
+    .small_resim img {
+        height: 80px;
+        width: 80px;
+        margin-right: 5px;
+    }
+
+    .big_resim img {
+        height: auto;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .desciription_section {
+        padding-bottom: 20px;
+        min-width: auto;
+    }
+
+    .product_name {
+        margin-bottom: 10px;
+    }
+
+    .sizes, .addtobasket, .product_info {
+        margin-top: 10px;
+    }
+
+    .addbutton {
+        flex-direction: row; /* Change to row to align items horizontally */
+        justify-content: space-between;
+    }
+
+    .addbutton button {
+        width: calc(50% - 5px);
+    }
+    .favori{
+        margin-left: 5px;            
+}
+.price {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .price p {
+        margin-right: 5px;
+    }
+
+    .discaunt::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 100%;
+        background: black;
+        left: 70px; /* Adjust the position */
+    }
+
+    .discaunt {
+        margin-left: 5px; /* Add margin between 48.800 TL and Sepette %? indirim */
+    }
+
+    .discaunt p {
+        margin-left: 5px;
+    }
+
+    .discaunt_price {
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    
+}
